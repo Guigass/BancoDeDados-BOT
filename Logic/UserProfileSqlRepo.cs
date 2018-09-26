@@ -32,6 +32,7 @@ namespace SimpleBot.Logic
 
         public void SetProfile(string id, UserProfile profile)
         {
+            // Essa classe é a mesma que UserProfileSQL?
             _context.Set<UserProfile>().Add(profile);
             _context.SaveChanges();
         }
